@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Link, Route } from "react-router-dom";
+import DashboardScreen from './screens/DashboardScreen';
 import LoginScreen from './screens/LoginScreen';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         </div>  
         <main>
           <Route path="/" component={LoginScreen} exact></Route>
+          <Route path="/dashboard" component={DashboardScreen}></Route>
         </main>
     </BrowserRouter>
 
